@@ -1,0 +1,598 @@
+/*********************************************
+ *
+ * CSS per Slides - Rodolfo Giacalone
+ *
+ *********************************************/
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/b_light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myChewy;
+  src: url(fonts/Chewy.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myTangerine;
+  src: url(fonts/Tangerine.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myArchitects;
+  src: url(fonts/ArchitectsDaughter.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myIndie;
+  src: url(fonts/IndieFlower.ttf) format('truetype');
+}
+
+/****Text-shadow multipla****************/
+
+.ts{
+    color:#e6ff7f;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+/***************************************/
+
+@keyframes gira{
+    from {transform: rotateY(0deg) scale(0.2, 0.2);}
+    to {transform: rotateY(360deg) scale(0.15, 0.15);}
+}
+
+@keyframes giri{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+.logo_img{
+  width: 5%;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 1000;
+  animation-name: giri;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
+}
+
+.titolo{
+    background-color:white;
+    text-align:center;
+    color:#7CBB00;
+    font-size: 48px;
+    font-weight: bold;
+    border:5px groove #3B5998;
+    padding:30px;
+    border-radius:25px;
+    box-shadow: 5px 5px 10px #000;
+    position: fixed;
+    top: 38%;
+    left: 15%;
+    right: 15%;
+}
+
+.sopra-titolo{
+    color:#EA4335;
+    margin:auto;
+    border:5px outset;
+    max-width: 450px;
+    text-align:center;
+    padding:25px;
+    font-size: 32px;
+    text-shadow: 4px 4px 4px #aaa;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+}
+
+.sotto-titolo{
+    position: fixed;
+    top: 75%;
+    right: 15%;
+    font-size: 25px;
+}
+
+
+.r3-text-foto{
+  z-index: 1000;
+  position: absolute;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.r3-foto{
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  object-fit: contain;
+}
+
+
+/*********************************************
+ *
+ * Box Piccolo - Bordo completo
+ *
+ *********************************************/
+
+.minibordo-giallo{
+    background-color:white;
+    border: 3px solid #ffff0b;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-rosso{
+    background-color:white;
+    border: 3px solid #EA4335;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-arancio{
+    background-color:white;
+    border: 3px solid #FF9900;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-nero{
+    background-color:white;
+    border: 3px solid black;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-verde{
+    background-color:white;
+    border: 3px solid #34A853;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-android{
+    background-color:snow;
+    border: 3px solid #A4C639;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-azul{
+    background-color:white;
+    border: 3px solid #4285F4;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-blue{
+    background-color:white;
+    border: 3px solid #33338b;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+/*********************************************
+ *
+ * Box Piccolo - Bordo completo Arrotondato
+ *
+ *********************************************/
+/*
+.minibordoR-giallo{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #FFCC00;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-rosso{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #EA4335;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-arancio{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #FF9900;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-nero{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid black;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-verde{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #34A853;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-android{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #A4C639;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-azul{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #4285F4;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+
+.minibordoR-blue{
+    position: relative;
+    left: 200px;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    border: 3px solid #33338b;
+    padding:15px;
+    box-shadow: 5px 5px 10px #000;
+    border-radius: 25px;
+}
+*/
+/*********************************************
+ *
+ * Border Left - Colorato - Con Ombra
+ *
+ *********************************************/
+
+.ru-arancio{
+    border-left: 7px solid #FF9900;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-rosso{
+    border-left: 7px solid #EA4335;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-giallo{
+    border-left: 7px solid #FFCC00;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-giallo-light{
+    border-left: 7px solid #ddf04c;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-verde{
+    border-left: 7px solid #89CA39;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-verde-light{
+    border-left: 7px solid #CCE42F;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-teal{
+    border-left: 7px solid #438A74;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-verde-scuro{
+    border-left: 7px solid #093326;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+
+.ru-android{
+    border-left: 7px solid #A4C639;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-azul{
+    border-left: 7px solid #4285F4;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-blue{
+    border-left: 7px solid #33338b;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.ru-grigio{
+    border-left: 7px solid #80ba3d;
+    text-align:left;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+/*********************************************
+ *            Box:
+ *
+ * l-card con immagine in r-img
+ *
+ *
+ *********************************************/
+
+.l-card-rosso{
+    border-left: 7px solid #EA4335;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-arancio{
+    border-left: 7px solid #FF9900;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-giallo{
+    border-left: 7px solid #FFCC00;
+    width:50%;
+    background-color:snow;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-verde{
+    border-left: 7px solid #34A853;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-android{
+    border-left: 7px solid #A4C639;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-azul{
+    border-left: 7px solid #4285F4;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.l-card-blue{
+    border-left: 7px solid #33338b;
+    width:50%;
+    background-color:white;
+    padding: 25px;
+    box-shadow: 5px 5px 10px #000;
+    z-index: 1;
+}
+
+.r-img{
+    position: fixed;
+    right: 30px;
+    top: auto;
+    width: 35%;
+}
+
+/*********************************************
+ *            Varie
+ *
+ * 
+ *********************************************/
+
+.dx{
+  position: absolute;
+  right: 5px;
+  top: 150px;
+}
+
+.sx{
+  position: absolute;
+  left: 5px;
+  top: 150px;
+}
+
+.card-p{
+    padding: 12px;
+}
+
+.lista-greca{
+    list-style-type: lower-greek;
+}
+
+.prima{
+    z-index: 1;
+}
+
+.sotto-il-logo{
+    position: absolute;
+    left: 35px;
+}
+
+#slide-(name: nomeDia){}
+
+/*********************************************
+ *        c centra il testo e padding
+ *        p padding senza centrare
+ *        l text-align:left
+ *        ib display:inline-block
+ *        no-pad senza padding
+ *        
+ *********************************************/
+
+.c{
+    text-align: center;
+    padding: 15px;
+}
+
+.l{
+    text-align: left;
+}
+
+.p{
+    padding: 15px;
+}
+
+.m{
+    margin: 2px;
+}
+
+.ib{
+    width: auto;
+    left: auto;
+    display: inline-block;
+}
+
+.no-pad{
+    padding: 0px;
+}
+
+.t{
+    position: absolute;
+    z-index:1;
+    top:140px;
+    right: 30px;
+    left: 30px;
+}
+
+.top{
+    position: relative;
+    z-index:1;
+    top:50px;
+    right: 30px;
+    left: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.r{
+    position: relative;
+}
+
+/******************************************** *
+ *            Centra il box
+ *
+ * 
+ *********************************************/
+
+
+.centrato{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.adestra{
+    position: relative;
+    left: 45%;
+    width: 55%;
+}
+
+/*********************************************
+ *
+ * Animazioni
+ *
+ *********************************************/
+
+.trans{
+    transform: scale(0.2, 0.2);
+    transform-origin: bottom;
+    transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.trans:hover{
+    transform: scale(1, 1);
+}
+
+.gira-gira{
+    animation-name: gira;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
